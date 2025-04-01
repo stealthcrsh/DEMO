@@ -1,6 +1,4 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFlask, faWrench, faHeadset, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 const LandingPage = () => {
   return (
@@ -17,7 +15,7 @@ const LandingPage = () => {
             </p>
             <button className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition duration-300 flex items-center gap-2">
               Get Started
-              <FontAwesomeIcon icon={faArrowRight} className="h-4 w-4" />
+              <i className="fas fa-arrow-right"></i>
             </button>
           </div>
         </div>
@@ -31,7 +29,7 @@ const LandingPage = () => {
             {/* Feature 1 */}
             <div className="bg-white p-6 rounded-lg shadow-md">
               <div className="flex items-center gap-3 mb-4">
-                <FontAwesomeIcon icon={faFlask} className="h-6 w-6 text-blue-500" />
+                <i className="fas fa-magic text-xl text-blue-500"></i>
                 <h3 className="text-xl font-semibold">Easy to Use</h3>
               </div>
               <p className="text-gray-600">
@@ -41,7 +39,7 @@ const LandingPage = () => {
             {/* Feature 2 */}
             <div className="bg-white p-6 rounded-lg shadow-md">
               <div className="flex items-center gap-3 mb-4">
-                <FontAwesomeIcon icon={faWrench} className="h-6 w-6 text-blue-500" />
+                <i className="fas fa-tools text-xl text-blue-500"></i>
                 <h3 className="text-xl font-semibold">Powerful Tools</h3>
               </div>
               <p className="text-gray-600">
@@ -51,7 +49,7 @@ const LandingPage = () => {
             {/* Feature 3 */}
             <div className="bg-white p-6 rounded-lg shadow-md">
               <div className="flex items-center gap-3 mb-4">
-                <FontAwesomeIcon icon={faHeadset} className="h-6 w-6 text-blue-500" />
+                <i className="fas fa-headset text-xl text-blue-500"></i>
                 <h3 className="text-xl font-semibold">24/7 Support</h3>
               </div>
               <p className="text-gray-600">
