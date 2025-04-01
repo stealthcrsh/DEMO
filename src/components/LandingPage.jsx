@@ -1,4 +1,6 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFlask, faWrench, faHeadset, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 const LandingPage = () => {
   return (
@@ -13,8 +15,9 @@ const LandingPage = () => {
             <p className="text-xl text-white text-center mb-8">
               The best solution for your business needs
             </p>
-            <button className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition duration-300">
+            <button className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition duration-300 flex items-center gap-2">
               Get Started
+              <FontAwesomeIcon icon={faArrowRight} className="h-4 w-4" />
             </button>
           </div>
         </div>
@@ -27,21 +30,30 @@ const LandingPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Feature 1 */}
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-4">Easy to Use</h3>
+              <div className="flex items-center gap-3 mb-4">
+                <FontAwesomeIcon icon={faFlask} className="h-6 w-6 text-blue-500" />
+                <h3 className="text-xl font-semibold">Easy to Use</h3>
+              </div>
               <p className="text-gray-600">
                 Our platform is designed with simplicity in mind, making it easy for anyone to get started.
               </p>
             </div>
             {/* Feature 2 */}
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-4">Powerful Tools</h3>
+              <div className="flex items-center gap-3 mb-4">
+                <FontAwesomeIcon icon={faWrench} className="h-6 w-6 text-blue-500" />
+                <h3 className="text-xl font-semibold">Powerful Tools</h3>
+              </div>
               <p className="text-gray-600">
                 Access a wide range of powerful tools to help your business grow and succeed.
               </p>
             </div>
             {/* Feature 3 */}
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-4">24/7 Support</h3>
+              <div className="flex items-center gap-3 mb-4">
+                <FontAwesomeIcon icon={faHeadset} className="h-6 w-6 text-blue-500" />
+                <h3 className="text-xl font-semibold">24/7 Support</h3>
+              </div>
               <p className="text-gray-600">
                 Our dedicated support team is always here to help you with any questions.
               </p>
